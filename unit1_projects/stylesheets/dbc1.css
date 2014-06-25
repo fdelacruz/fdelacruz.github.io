@@ -1,0 +1,26 @@
+body {
+	font-family: 'Nunito', sans-serif;
+}
+article {
+	display: block;
+	line-height: 1.6;
+	margin-top: 3em;
+}
+
+header {
+	text-align: center;
+	background-color: green;
+	color: white;
+}
+
+header h2 {
+	font-size: .75em;
+}
+
+.likes li {
+	color: darkgreen;
+}
+
+#bucket li {
+	color: darkblue;
+}
