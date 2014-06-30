@@ -1,0 +1,54 @@
+.pageWrapper { 
+	width: 90%;
+	margin: auto;
+}
+
+.header {
+	text-align: center;
+}
+.sidebar {
+	/*width: 25%;*/
+	float: right;
+	/*margin: 10px;*/
+	padding-left: 40px;
+	/*border: 1px solid rgb(5,5,5);*/
+}
+
+/* unvisited link */
+a:link {
+    color: #000;
+}
+
+/* visited link */
+a:visited {
+    color: #000;
+}
+
+ul a {
+	text-decoration: none;
+}
+
+.pic {
+	width: 300px;
+	margin: 5px auto 25px auto;
+}
+
+.content {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.mantras {	
+	width: 65%;
+	text-align: center;
+	border: 1px solid;
+	margin: 0 100px;
+	padding: 5px;
+	font-size: 95%;
+	background-color: #99C8FB;
+}
+
+.footer {
+	text-align: center;
+	font-size: 11px;
+}
