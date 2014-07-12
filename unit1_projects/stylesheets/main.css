@@ -25,17 +25,18 @@ ul#aside {
 }
 
 #aside a {
-  color: #000;
+  color: #FFF;
+  background-color: #6ab47b;
   font-size: .75em;
   text-decoration: none;
-  border: 1px solid #999;
+  /*border: 1px solid #999;*/
   padding: 7px 5px 7px 30px;
   display: block;
 }
 
-#aside a:hover {
+#aside a.selected, #aside a:hover {
   font-weight: bold;
-  background: #6ab47b;
+  color: #32673F;
 }
 
 section#posts {
