@@ -33,6 +33,11 @@ ul#aside {
   display: block;
 }
 
+#aside a:hover {
+  font-weight: bold;
+  background: #6ab47b;
+}
+
 section#posts {
 position: relative;
 display: block;
