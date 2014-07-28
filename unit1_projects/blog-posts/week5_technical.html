@@ -61,26 +61,30 @@
     </p>
     <p>
     As I mentioned, Classes contain information about the attributes (data) and
-    methods (functions that act on said data) of their  objects. Let's go
-    through them one-by-one in our Car example.
+    methods (functions that act on said data) of their objects. Let's go
+    through them one-by-one in our Gear example.
     </p>
     <p>
-    First we define the initialize class. This helps you
-    'create' an object -- you use this method to generate new Car object or
-    instance. It is a function that takes two inputs: what type of car it is, and what color it
-    is. These inputs are then fed into the two attributes that each Car has,
-    "@type" and "@color". The "@" symbol is syntax and part of all
+    First we define the initialize method. This helps you
+    'create' an object -- you use this method to generate a new Gear object.
+     It is a function that takes four inputs:  chainring, cog, rim,
+     and tire.
+     These inputs are then fed into the attributes that each Gear instance has,
+    "@chainring", "@cog", "@rim" and "@tire". The "@" symbol is syntax and part of all
     'instance variables', i.e. variables that your object contains once it is
     initialized.
     </p>
     <p>
     In addition to the initialize method, there are several others methods that
-    can act on each Car object.  In this case we have drive_car and honk. One takes an input
-    (miles) and puts out, "You drove XX many miles", where XX denotes the
-    miles input into the function. The other method, honk, simply puts "Honk!"
+    can act on each Gear object.  In this case we have ratio and gear_inches.
+    One divides the chainring by the cog size in order to calculate, you guessed
+    right, the ratio. The other method, in turn uses the output from ratio to
+    calculate the gear inches which is what cyclist (at least those in the
+    United States) use compare bicycles that differ in both gearing and wheel
+    size.
     </p>
     <p>
-    We have created a Class--a constructor, essentially--which generates Car
+    We have created a Class--a constructor, essentially--which generates Gear
     objects with associated data (attributes) and functions that act on said
     data (methods).
     </p>
