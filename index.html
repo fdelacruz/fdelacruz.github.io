@@ -26,8 +26,8 @@
   <div id="wrapper">
     <section>
       <ul id="aside">
-        <li><a href="unit1_projects/blog-posts/week6_technical.html"
-          class="selected">W6: Technical Post</a></li>
+        <li><a href="unit1_projects/blog-posts/week7_technical.html" class="selected">W7: Technical Post</a></li>
+        <li><a href="unit1_projects/blog-posts/week6_technical.html">W6: Technical Post</a></li>
         <li><a href="unit1_projects/blog-posts/week6_cultural.html">W6: Cultural Post</a></li>
         <li><a href="unit1_projects/blog-posts/week5_cultural.html">W5: Technical Post</a></li>
         <li><a href="unit1_projects/blog-posts/week5_cultural.html">W5: Cultural Post</a></li>
@@ -42,64 +42,21 @@
       </ul>
     </section>
     <section id="posts">
-    <h3>Blocs, Procs, and Lambdas</h3>
-    <p>Blocks, Procs and lambdas (also know as <a href="http://en.wikipedia.org/wiki/Closure_%28computer_science%29"
-      target="_blank">closures</a> in Computer Science)
-    are one of the most powerful aspects of Ruby, and also one of the most
-    misunderstood. I will attempt to explains the similarities and differences.</p>
-    <h3>First Up Blocs</h3>
-    <p>A block is just a bit of code between do..end or {}. It's not an object
-    on its own, but it can be passed to methods like .each or .collect.</p>
-    <p>We've seen this in action.</p>
-    <script src="https://gist.github.com/fdelacruz/1ec0eb8a2e896a50af58.js"></script>
-    <p>Nothing new here.</p>
-    <h3>Now Procs</h3>
+    <h3>SQL Injection</h3>
     <p>
-    A proc is a saved block we can use over and over. Just like you can give a
-    bit of code a name and turn it into a method, you can name a block and
-    turn it into a proc. With procs you write your code once and use it many
-    times. That way keeping your code D.R.Y (Don't Repeat Yourself).
-    </p>
-    <script src="https://gist.github.com/fdelacruz/e03fec47ca271c44baf6.js"></script>
-    <h3>Last, but not least, Lambdas</h3>
-    <p> 
-    Like procs lambdas are objects. With the exception of some syntax
-    differences, procs and lamdas are essentially the same.
-    </p>
-    <script src="https://gist.github.com/fdelacruz/b29e88f7b50abe15f888.js"></script>
-    <h3>Lambdas vs. Procs</h3>
-    <p>
-    Eventhough procs and lambdas sport stricking similarities there are two main
-    differences.
+    SQL injection is when an SQL query is entered into a user input field in an application. This often occurs online with website form fields, and is considered one of the top 10 web application vulnerabilities by the Open Web Application Security Project. An example of a simple SQL query used for injection is: SELECT * FROM users WHERE name = '' OR '1'='1';. As 1=1, this will always evaluate to TRUE and will be executed.
     </p>
     <p>
-    First, lambdas check the number of arguments, while procs do not.
+    There are lots of things that can happen with injected SQL code. Some of them may be invisible to the attacker, such as deleting certain parts of the database. Other attacks can take advantage of or access parts of the database that they shouldn't have access to (such as signing into a website with a different user's ID).
     </p>
-    <script src="https://gist.github.com/fdelacruz/2159133e36d240f62941.js"></script>
+    <img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png">
     <p>
-    In contrast, procs don’t care if they are passed the wrong number of
-    arguments.
+    There are a few ways to protect against SQL injections, and they mostly take the form of detecting whether the input is actual SQL code. Escaping is a common method of guarding against injections; this is done by detecting certain characters used in SQL and escaping them. Other methods include sandboxing the permissions of the database logon, or pattern-checking inputs.
     </p>
-    <script src="https://gist.github.com/fdelacruz/a786424aff01a76d0935.js"></script>
-    <p>
-    Second, Lambdas and procs treat the ‘return’ keyword differently.
-    </p>
-    <p>
-    ‘return’ inside of a lambda triggers the code right outside of the lambda code
-    <script src="https://gist.github.com/fdelacruz/14bb0f39621afc6c1c90.js"></script>
-    </p>
-    <p>‘return’ inside of a proc triggers the code outside of the method where
-    the proc is being executed
-    <script src="https://gist.github.com/fdelacruz/d01eaa8ffbacbf4e8c3a.js"></script> 
-    </p>
-    <h3>Summary Differences</h3>
-    <ol>
-      <li>Procs are objects, blocks are not</li>
-      <li>A proc is a saved block we can use over and over.</li>
-      <li>A lambda is just like a proc, only it cares about the number of
-      arguments it gets and it returns to its calling method rather than
-      returning immediately.</li>
-    </ol>
+<p>
+I found this <a href="http://en.wikipedia.org/wiki/SQL_injection"
+  target="_blank">resource</a> from Wikipedia to be a clear explanation of SQL injection.
+</p>
     </section>
     <footer>
      <a href="http://twitter.com/fdelacruz"><img src="unit1_projects/images/twitter.png" alt="Twitter logo" class="social-icon"></a>

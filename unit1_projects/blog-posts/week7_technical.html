@@ -26,12 +26,12 @@
 <div id="wrapper">
   <section>
     <ul id="aside">
-      <li><a href="week7_technical.html">W7: Technical Post</a></li>
+      <li><a href="#" class="selected">W7: Technical Post</a></li>
       <li><a href="week6_technical.html">W6: Technical Post</a></li>
       <li><a href="week6_cultural.html">W6: Cultural Post</a></li>
       <li><a href="week5_technical.html">W5: Technical Post</a></li>
       <li><a href="week5_cultural.html">W5: Cultural Post</a></li>
-      <li><a href="#" class="selected">W4: Technical Post</a></li>
+      <li><a href="week4_technical.html">W4: Technical Post</a></li>
       <li><a href="week4_cultural.html">W4: Cultural Post</a></li>
       <li><a href="week3_cultural.html">W3: Cultural Post</a></li>
       <li><a href="week3_technical.html">W3: Technical Post</a></li>
@@ -42,22 +42,27 @@
     </ul>
   </section>
   <section id="posts">
-    <h3>Enumerable#map method</h3>
+    <h3>SQL Injection</h3>
     <p>
-    The Enumerable#map method is handy method for updating or acting upon each element in a given array. Simply put, 
-    the method will pass in each element to a code block and return a new array with the updated elements.
+    SQL injection is when an SQL query is entered into a user input field in an application. This often occurs online with website form fields, and is considered one of the top 10 web application vulnerabilities by the Open Web Application Security Project. An example of a simple SQL query used for injection is: SELECT * FROM users WHERE name = '' OR '1'='1';. As 1=1, this will always evaluate to TRUE and will be executed.
     </p>
     <p>
-    <script src="https://gist.github.com/fdelacruz/c3621082fd6c0d04d772.js"></script>
-    Here we take a sample array (1..4) and multiply each element in the array by three using the Enumerable#map method. Then, we assign this output to a new variable "new_arr" returning the output.
+    There are lots of things that can happen with injected SQL code. Some of them may be invisible to the attacker, such as deleting certain parts of the database. Other attacks can take advantage of or access parts of the database that they shouldn't have access to (such as signing into a website with a different user's ID).
     </p>
-
+    <img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png">
+    <p>
+    There are a few ways to protect against SQL injections, and they mostly take the form of detecting whether the input is actual SQL code. Escaping is a common method of guarding against injections; this is done by detecting certain characters used in SQL and escaping them. Other methods include sandboxing the permissions of the database logon, or pattern-checking inputs.
+    </p>
+<p>
+I found this <a href="http://en.wikipedia.org/wiki/SQL_injection"
+  target="_blank">resource</a> from Wikipedia to be a clear explanation of SQL injection.
+</p>
   </section>
   <footer>
     <a href="http://twitter.com/fdelacruz"><img src="../images/twitter.png" alt="Twitter logo" class="social-icon"></a>
     <a href="http://facebook.com/francisco.delacruz"><img src="../images/facebook.png" alt="Facebook logo" class="social-icon"></a>
     <a href="https://github.com/fdelacruz"><img src="../images/github.png" alt="Github logo" class="social-icon"></a>
-    <!-- <a href="https://www.linkedin.com/profile/view?id=349703194"><img src="unit1_projects/images/linkedin.png" alt="Linkedin logo" class="social-icon"></a> -->
+    <!-- <a href="https://www.linkedin.com/profile/view?id=349703194"><img src="../images/linkedin.png" alt="Linkedin logo" class="social-icon"></a> -->
 
     <p>&copy; 2014 Francisco</p>
   </footer>
