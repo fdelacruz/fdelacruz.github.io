@@ -1,74 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Francisco | Dev Bootcamp Blog</title>
-<link rel="stylesheet" href="../stylesheets/normalize.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800|Changa+One' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="../stylesheets/main.css">
-<link rel="stylesheet" href="../stylesheets/responsive.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<header>
-  <a href="../../index.html" id="logo">
-    <h1>Francisco</h1>
-    <h2>Dev Bootcamp Blog</h2>
-  </a>
-  <nav>
-    <ul>
-      <li><a href="../../index.html">Home</a></li>
-      <li><a href="../about.html" >About</a></li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<div id="wrapper">
-  <section>
-    <ul id="aside">
-        <li><a href="week8_technical.html">W8: Technical Post</a></li>
-      <li><a href="week8_cultural.html">W8: Cultural Post</a></li>
-      <li><a href="week7_cultural.html">W7: Cultural Post</a></li>
-      <li><a href="#" class="selected">W7: Technical Post</a></li>
-      <li><a href="week6_technical.html">W6: Technical Post</a></li>
-      <li><a href="week6_cultural.html">W6: Cultural Post</a></li>
-      <li><a href="week5_technical.html">W5: Technical Post</a></li>
-      <li><a href="week5_cultural.html">W5: Cultural Post</a></li>
-      <li><a href="week4_technical.html">W4: Technical Post</a></li>
-      <li><a href="week4_cultural.html">W4: Cultural Post</a></li>
-      <li><a href="week3_cultural.html">W3: Cultural Post</a></li>
-      <li><a href="week3_technical.html">W3: Technical Post</a></li>
-      <li><a href="week2_technical.html">W2: Technical Post</a></li>
-      <li><a href="week1_cultural.html">W1: Cultural Post</a></li>
-      <li><a href="../wireframe_sites.html">W1: Wireframe</a></li>
-      <li><a href="week1_technical.html">W1: Technical Post</a></li>
-    </ul>
-  </section>
-  <section id="posts">
-    <h3>SQL Injection</h3>
-    <p>
-    SQL injection is when an SQL query is entered into a user input field in an application. This often occurs online with website form fields, and is considered one of the top 10 web application vulnerabilities by the Open Web Application Security Project. An example of a simple SQL query used for injection is: SELECT * FROM users WHERE name = '' OR '1'='1';. As 1=1, this will always evaluate to TRUE and will be executed.
-    </p>
-    <p>
-    There are lots of things that can happen with injected SQL code. Some of them may be invisible to the attacker, such as deleting certain parts of the database. Other attacks can take advantage of or access parts of the database that they shouldn't have access to (such as signing into a website with a different user's ID).
-    </p>
-    <img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png">
-    <p>
-    There are a few ways to protect against SQL injections, and they mostly take the form of detecting whether the input is actual SQL code. Escaping is a common method of guarding against injections; this is done by detecting certain characters used in SQL and escaping them. Other methods include sandboxing the permissions of the database logon, or pattern-checking inputs.
-    </p>
-<p>
-I found this <a href="http://en.wikipedia.org/wiki/SQL_injection"
-  target="_blank">resource</a> from Wikipedia to be a clear explanation of SQL injection.
-</p>
-  </section>
-  <footer>
-    <a href="http://twitter.com/fdelacruz"><img src="../images/twitter.png" alt="Twitter logo" class="social-icon"></a>
-    <a href="http://facebook.com/francisco.delacruz"><img src="../images/facebook.png" alt="Facebook logo" class="social-icon"></a>
-    <a href="https://github.com/fdelacruz"><img src="../images/github.png" alt="Github logo" class="social-icon"></a>
-    <!-- <a href="https://www.linkedin.com/profile/view?id=349703194"><img src="../images/linkedin.png" alt="Linkedin logo" class="social-icon"></a> -->
 
-    <p>&copy; 2014 Francisco</p>
-  </footer>
-</div>
+<head>
+    <meta charset="utf-8">
+    <title>Francisco | Dev Bootcamp Blog</title>
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800|Changa+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html" id="logo">
+            <h1>Francisco</h1>
+            <h2>Dev Bootcamp Blog</h2>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a>
+                </li>
+                <li><a href="../about.html">About</a>
+                </li>
+                <li><a href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <section>
+            <ul id="aside">
+                <li><a href="week8_technical.html">W8: Technical Post</a>
+                </li>
+                <li><a href="week8_cultural.html">W8: Cultural Post</a>
+                </li>
+                <li><a href="week7_cultural.html">W7: Cultural Post</a>
+                </li>
+                <li><a href="#" class="selected">W7: Technical Post</a>
+                </li>
+                <li><a href="week6_technical.html">W6: Technical Post</a>
+                </li>
+                <li><a href="week6_cultural.html">W6: Cultural Post</a>
+                </li>
+                <li><a href="week5_technical.html">W5: Technical Post</a>
+                </li>
+                <li><a href="week5_cultural.html">W5: Cultural Post</a>
+                </li>
+                <li><a href="week4_technical.html">W4: Technical Post</a>
+                </li>
+                <li><a href="week4_cultural.html">W4: Cultural Post</a>
+                </li>
+                <li><a href="week3_cultural.html">W3: Cultural Post</a>
+                </li>
+                <li><a href="week3_technical.html">W3: Technical Post</a>
+                </li>
+                <li><a href="week2_technical.html">W2: Technical Post</a>
+                </li>
+                <li><a href="week1_cultural.html">W1: Cultural Post</a>
+                </li>
+                <li><a href="../wireframe_sites.html">W1: Wireframe</a>
+                </li>
+                <li><a href="week1_technical.html">W1: Technical Post</a>
+                </li>
+            </ul>
+        </section>
+        <section id="posts">
+            <h3>SQL Injection</h3>
+            <p>
+                SQL injection is when an SQL query is entered into a user input field in an application. This often occurs online with website form fields, and is considered one of the top 10 web application vulnerabilities by the Open Web Application Security Project. An example of a simple SQL query used for injection is: SELECT * FROM users WHERE name = '' OR '1'='1';. As 1=1, this will always evaluate to TRUE and will be executed.
+            </p>
+            <p>
+                There are lots of things that can happen with injected SQL code. Some of them may be invisible to the attacker, such as deleting certain parts of the database. Other attacks can take advantage of or access parts of the database that they shouldn't have access to (such as signing into a website with a different user's ID).
+            </p>
+            <img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png">
+            <p>
+                There are a few ways to protect against SQL injections, and they mostly take the form of detecting whether the input is actual SQL code. Escaping is a common method of guarding against injections; this is done by detecting certain characters used in SQL and escaping them. Other methods include sandboxing the permissions of the database logon, or pattern-checking inputs.
+            </p>
+            <p>
+                I found this <a href="http://en.wikipedia.org/wiki/SQL_injection" target="_blank">resource</a> from Wikipedia to be a clear explanation of SQL injection.
+            </p>
+        </section>
+        <footer>
+            <a href="http://twitter.com/fdelacruz">
+                <img src="../images/twitter.png" alt="Twitter logo" class="social-icon">
+            </a>
+            <a href="http://facebook.com/francisco.delacruz">
+                <img src="../images/facebook.png" alt="Facebook logo" class="social-icon">
+            </a>
+            <a href="https://github.com/fdelacruz">
+                <img src="../images/github.png" alt="Github logo" class="social-icon">
+            </a>
+            <!-- <a href="https://www.linkedin.com/profile/view?id=349703194"><img src="../images/linkedin.png" alt="Linkedin logo" class="social-icon"></a> -->
+
+            <p>&copy; 2014 Francisco</p>
+        </footer>
+    </div>
 </body>
+
 </html>

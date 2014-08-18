@@ -1,117 +1,132 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Francisco | Dev Bootcamp Blog</title>
-<link rel="stylesheet" href="../stylesheets/normalize.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800|Changa+One' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="../stylesheets/main.css">
-<link rel="stylesheet" href="../stylesheets/responsive.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<header>
-  <a href="../../index.html" id="logo">
-    <h1>Francisco</h1>
-    <h2>Dev Bootcamp Blog</h2>
-  </a>
-  <nav>
-    <ul>
-      <li><a href="../../index.html">Home</a></li>
-      <li><a href="../about.html" >About</a></li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<div id="wrapper">
-  <section>
-    <ul id="aside">
-        <li><a href="week8_technical.html">W8: Technical Post</a></li>
-      <li><a href="week8_cultural.html">W8: Cultural Post</a></li>
-      <li><a href="week7_cultural.html">W7: Cultural Post</a></li>
-      <li><a href="week7_technical.html">W7: Technical Post</a></li>
-      <li><a href="#" class="selected">W6: Technical Post</a></li>
-      <li><a href="week6_cultural.html">W6: Cultural Post</a></li>
-      <li><a href="week5_technical.html">W5: Technical Post</a></li>
-      <li><a href="week5_cultural.html">W5: Cultural Post</a></li>
-      <li><a href="week4_technical.html">W4: Technical Post</a></li>
-      <li><a href="week4_cultural.html">W4: Cultural Post</a></li>
-      <li><a href="week3_cultural.html">W3: Cultural Post</a></li>
-      <li><a href="week3_technical.html">W3: Technical Post</a></li>
-      <li><a href="week2_technical.html">W2: Technical Post</a></li>
-      <li><a href="week1_cultural.html">W1: Cultural Post</a></li>
-      <li><a href="../wireframe_sites.html">W1: Wireframe</a></li>
-      <li><a href="week1_technical.html">W1: Technical Post</a></li>
-    </ul>
-  </section>
-  <section id="posts">
-    <h3>Blocs, Procs, and Lambdas</h3>
-    <p>Blocks, Procs and lambdas (also know as <a href="http://en.wikipedia.org/wiki/Closure_%28computer_science%29"
-      target="_blank">closures</a> in Computer Science)
-    are one of the most powerful aspects of Ruby, and also one of the most
-    misunderstood. I will attempt to explains the similarities and differences.</p>
-    <h3>First Up Blocs</h3>
-    <p>A block is just a bit of code between do..end or {}. It's not an object
-    on its own, but it can be passed to methods like .each or .collect.</p>
-    <p>We've seen this in action.</p>
-    <script src="https://gist.github.com/fdelacruz/1ec0eb8a2e896a50af58.js"></script>
-    <p>Nothing new here.</p>
-    <h3>Now Procs</h3>
-    <p>
-    A proc is a saved block we can use over and over. Just like you can give a
-    bit of code a name and turn it into a method, you can name a block and
-    turn it into a proc. With procs you write your code once and use it many
-    times. That way keeping your code D.R.Y (Don't Repeat Yourself).
-    </p>
-    <script src="https://gist.github.com/fdelacruz/e03fec47ca271c44baf6.js"></script>
-    <h3>Last, but not least, Lambdas</h3>
-    <p> 
-    Like procs lambdas are objects. With the exception of some syntax
-    differences, procs and lamdas are essentially the same.
-    </p>
-    <script src="https://gist.github.com/fdelacruz/b29e88f7b50abe15f888.js"></script>
-    <h3>Lambdas vs. Procs</h3>
-    <p>
-    Eventhough procs and lambdas sport stricking similarities there are two main
-    differences.
-    </p>
-    <p>
-    First, lambdas check the number of arguments, while procs do not.
-    </p>
-    <script src="https://gist.github.com/fdelacruz/2159133e36d240f62941.js"></script>
-    <p>
-    In contrast, procs don’t care if they are passed the wrong number of
-    arguments.
-    </p>
-    <script src="https://gist.github.com/fdelacruz/a786424aff01a76d0935.js"></script>
-    <p>
-    Second, Lambdas and procs treat the ‘return’ keyword differently.
-    </p>
-    <p>
-    ‘return’ inside of a lambda triggers the code right outside of the lambda code
-    <script src="https://gist.github.com/fdelacruz/14bb0f39621afc6c1c90.js"></script>
-    </p>
-    <p>‘return’ inside of a proc triggers the code outside of the method where
-    the proc is being executed
-    <script src="https://gist.github.com/fdelacruz/d01eaa8ffbacbf4e8c3a.js"></script> 
-    </p>
-    <h3>Summary Differences</h3>
-    <ol>
-      <li>Procs are objects, blocks are not</li>
-      <li>A proc is a saved block we can use over and over.</li>
-      <li>A lambda is just like a proc, only it cares about the number of
-      arguments it gets and it returns to its calling method rather than
-      returning immediately.</li>
-    </ol>
-  </section>
-  <footer>
-    <a href="http://twitter.com/fdelacruz"><img src="../images/twitter.png" alt="Twitter logo" class="social-icon"></a>
-    <a href="http://facebook.com/francisco.delacruz"><img src="../images/facebook.png" alt="Facebook logo" class="social-icon"></a>
-    <a href="https://github.com/fdelacruz"><img src="../images/github.png" alt="Github logo" class="social-icon"></a>
-    <!-- <a href="https://www.linkedin.com/profile/view?id=349703194"><img src="../images/linkedin.png" alt="Linkedin logo" class="social-icon"></a> -->
 
-    <p>&copy; 2014 Francisco</p>
-  </footer>
-</div>
+<head>
+    <meta charset="utf-8">
+    <title>Francisco | Dev Bootcamp Blog</title>
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800|Changa+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html" id="logo">
+            <h1>Francisco</h1>
+            <h2>Dev Bootcamp Blog</h2>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a>
+                </li>
+                <li><a href="../about.html">About</a>
+                </li>
+                <li><a href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <section>
+            <ul id="aside">
+                <li><a href="week8_technical.html">W8: Technical Post</a>
+                </li>
+                <li><a href="week8_cultural.html">W8: Cultural Post</a>
+                </li>
+                <li><a href="week7_cultural.html">W7: Cultural Post</a>
+                </li>
+                <li><a href="week7_technical.html">W7: Technical Post</a>
+                </li>
+                <li><a href="#" class="selected">W6: Technical Post</a>
+                </li>
+                <li><a href="week6_cultural.html">W6: Cultural Post</a>
+                </li>
+                <li><a href="week5_technical.html">W5: Technical Post</a>
+                </li>
+                <li><a href="week5_cultural.html">W5: Cultural Post</a>
+                </li>
+                <li><a href="week4_technical.html">W4: Technical Post</a>
+                </li>
+                <li><a href="week4_cultural.html">W4: Cultural Post</a>
+                </li>
+                <li><a href="week3_cultural.html">W3: Cultural Post</a>
+                </li>
+                <li><a href="week3_technical.html">W3: Technical Post</a>
+                </li>
+                <li><a href="week2_technical.html">W2: Technical Post</a>
+                </li>
+                <li><a href="week1_cultural.html">W1: Cultural Post</a>
+                </li>
+                <li><a href="../wireframe_sites.html">W1: Wireframe</a>
+                </li>
+                <li><a href="week1_technical.html">W1: Technical Post</a>
+                </li>
+            </ul>
+        </section>
+        <section id="posts">
+            <h3>Blocs, Procs, and Lambdas</h3>
+            <p>Blocks, Procs and lambdas (also know as <a href="http://en.wikipedia.org/wiki/Closure_%28computer_science%29" target="_blank">closures</a> in Computer Science) are one of the most powerful aspects of Ruby, and also one of the most misunderstood. I will attempt to explains the similarities and differences.</p>
+            <h3>First Up Blocs</h3>
+            <p>A block is just a bit of code between do..end or {}. It's not an object on its own, but it can be passed to methods like .each or .collect.</p>
+            <p>We've seen this in action.</p>
+            <script src="https://gist.github.com/fdelacruz/1ec0eb8a2e896a50af58.js"></script>
+            <p>Nothing new here.</p>
+            <h3>Now Procs</h3>
+            <p>
+                A proc is a saved block we can use over and over. Just like you can give a bit of code a name and turn it into a method, you can name a block and turn it into a proc. With procs you write your code once and use it many times. That way keeping your code D.R.Y (Don't Repeat Yourself).
+            </p>
+            <script src="https://gist.github.com/fdelacruz/e03fec47ca271c44baf6.js"></script>
+            <h3>Last, but not least, Lambdas</h3>
+            <p>
+                Like procs lambdas are objects. With the exception of some syntax differences, procs and lamdas are essentially the same.
+            </p>
+            <script src="https://gist.github.com/fdelacruz/b29e88f7b50abe15f888.js"></script>
+            <h3>Lambdas vs. Procs</h3>
+            <p>
+                Eventhough procs and lambdas sport stricking similarities there are two main differences.
+            </p>
+            <p>
+                First, lambdas check the number of arguments, while procs do not.
+            </p>
+            <script src="https://gist.github.com/fdelacruz/2159133e36d240f62941.js"></script>
+            <p>
+                In contrast, procs don’t care if they are passed the wrong number of arguments.
+            </p>
+            <script src="https://gist.github.com/fdelacruz/a786424aff01a76d0935.js"></script>
+            <p>
+                Second, Lambdas and procs treat the ‘return’ keyword differently.
+            </p>
+            <p>
+                ‘return’ inside of a lambda triggers the code right outside of the lambda code
+                <script src="https://gist.github.com/fdelacruz/14bb0f39621afc6c1c90.js"></script>
+            </p>
+            <p>‘return’ inside of a proc triggers the code outside of the method where the proc is being executed
+                <script src="https://gist.github.com/fdelacruz/d01eaa8ffbacbf4e8c3a.js"></script>
+            </p>
+            <h3>Summary Differences</h3>
+            <ol>
+                <li>Procs are objects, blocks are not</li>
+                <li>A proc is a saved block we can use over and over.</li>
+                <li>A lambda is just like a proc, only it cares about the number of arguments it gets and it returns to its calling method rather than returning immediately.</li>
+            </ol>
+        </section>
+        <footer>
+            <a href="http://twitter.com/fdelacruz">
+                <img src="../images/twitter.png" alt="Twitter logo" class="social-icon">
+            </a>
+            <a href="http://facebook.com/francisco.delacruz">
+                <img src="../images/facebook.png" alt="Facebook logo" class="social-icon">
+            </a>
+            <a href="https://github.com/fdelacruz">
+                <img src="../images/github.png" alt="Github logo" class="social-icon">
+            </a>
+            <!-- <a href="https://www.linkedin.com/profile/view?id=349703194"><img src="../images/linkedin.png" alt="Linkedin logo" class="social-icon"></a> -->
+
+            <p>&copy; 2014 Francisco</p>
+        </footer>
+    </div>
 </body>
+
 </html>
